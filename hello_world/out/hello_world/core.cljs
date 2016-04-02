@@ -1,3 +1,4 @@
+; set namespace
 (ns hello-world.core)
 
 (enable-console-print!)
