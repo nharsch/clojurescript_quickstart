@@ -1,10 +1,14 @@
 ; set namespace
-(ns hello-world.core)
+(ns hello-world.core
+  (:require [clojure.browser.repl :as repl]))
+
+(defonce conn
+  (repl/connect "http://localhost:9000/repl"))
 
 (enable-console-print!)
 
 (println "Hello world!")
 
-(println "Oh that's just me, making changes")
-
-
+;; added
+(defn foo [a b]
+  (* a b))
