@@ -12,3 +12,12 @@ clojure comes with watch tool that will watch for file changes to kick off new b
 defonce ensures the connection is constructed only one time
 
 :reload keyword relaods source
+
+### Compiling for Node
+
+npm install source-map-support
+
+optimization not really needed for node
+
+### Node repl
+
